@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <title>Idézetek</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
   <link rel="stylesheet" media="all" href="./css/style.css" />
   <script src="./js/QuoteGen.js"></script>
   <script src="./js/QuoteArray.js"></script>
@@ -14,16 +15,16 @@
 <body onload="genQuote()">
 
 <div class="container">
-  <!--<div id="date"></div>-->
-  <!--<div id="display"></div>-->
-  <div id="content">
-    <p id="quote"> </p>
+
+  <div class="flex-column">
+      <div class="flex-row">
+        <p id="quote"> </p>
+      </div>
+      <div class="flex-row">
+        <button id="gen" onclick="genQuote()">Új idézet</button>
+      </div>
   </div>
-</div>
-<div id="b-nav">
-  <ul>
-    <button id="gen" onclick="genQuote()">Új idézet</button>
-  </ul>
+
 </div>
 
 </body>
