@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>A jelen üzenete</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A jelen üzenete</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
-        
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
 
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.ico">
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">-->
-        <!--<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    </head>
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <body onload="genQuote()">
+</head>
 
-    <!--Facebook share code START -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <!--Facebook share code END-->
+<body onload="genQuote()">
 
-        <!-- Coming Soon -->
-        <div class="coming-soon">
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="flex-column">
-                        <div class="flex-row">
-                            <p id="quote" style="font-size: 2em"> </p>
-                        </div>
-                        <div class="flex-row">
-                            <button id="gen" onclick="genQuote()">Új üzenet</button>
-                        </div>
-                        <div class="flex-row" id="footer">
-                            <div class="flex-column">
-                                Egyedi látogatók száma: <a href="http://www.reliablecounter.com" target="_blank"><img src="https://www.reliablecounter.com/count.php?page=ajelenuzenete.hu/&digit=style/plain/22/&reloads=1" alt="" title="" border="0"></a><br /><a href="http://www.reliablecounter.com/blog/sell-junk-car-good-idea" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
-                            </div>
-                            <div class="flex-column">
-                                Amare et servire<br/>
-                                Budai Gergely és az Amitabha kezelőcsapat
-                            </div>
-                            <div class="flex-column">
-                                <div class="fb-share-button" data-href="http://ajelenuzenete.hu/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fajelenuzenete.hu%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-                            </div>
-                        </div>
+<!--Facebook share code START -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Facebook share code END-->
+<div id="main" class="container clear-top">
+    <!-- Coming Soon -->
+    <div class="coming-soon">
+        <div class="inner-bg">
+            <div class="container" style="padding-left: 0px;">
+                <div id="upper_right">
+                    <div class="fb-share-button" data-href="http://ajelenuzenete.hu/" data-layout="button_count"
+                         data-size="small"
+                         data-mobile-iframe="true"><a target="_blank"
+                                                      href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fajelenuzenete.hu%2F&amp;src=sdkpreparse"
+                                                      class="fb-xfbml-parse-ignore">Megosztás</a></div>
+                </div>
+
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <p id="quote" style="font-size: 2em"></p>
+                    </div>
+                    <div class="flex-row">
+                        <button id="gen" onclick="genQuote()">Új üzenet</button>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.10.2.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/jquery.countdown.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-        <script src="assets/js/QuoteArray.js"></script>
-        <script src="assets/js/QuoteGen.js"></script>
+    </div>
 
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
 
-    </body>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="flex-row">
+            <span style="padding-right: 7px;">Egyedi látogatók száma: </span><a href="http://www.reliablecounter.com" target="_blank"><img
+                src="https://www.reliablecounter.com/count.php?page=ajelenuzenete.hu/&digit=style/plain/22/&reloads=1"
+                alt="" title="" border="0"></a><br/><a
+                href="http://www.reliablecounter.com/blog/sell-junk-car-good-idea"
+                target="_blank"
+                style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
+        </div>
+        <div class="flex-row">
+            Amare et servire<br/>
+            Budai Gergely és az Amitabha kezelőcsapat
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/jquery.countdown.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/QuoteArray.js"></script>
+<script src="assets/js/QuoteGen.js"></script>
+
+<!--[if lt IE 10]>
+<script src="assets/js/placeholder.js"></script>
+<![endif]-->
+
+</body>
 
 </html>

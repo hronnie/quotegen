@@ -210,13 +210,38 @@ p:hover {
 }
 
 #footer{
-    background-color: transparent !important;
-    height: 60px;
+    /*background-color: transparent !important;*/
     bottom: 0px;
     left: 0px;
     line-height: 20px;
-    color: azure;
-    text-align: center;
+    /*color: azure;*/
+    /*text-align: center;*/
     width: 100%;
 }
 
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+    padding-top:20px;
+}
+
+#upper_right {
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
