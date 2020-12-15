@@ -245,3 +245,10 @@ html, body {
     top: 0;
     right: 0%;
 }
+
+.manual {
+    text-align: left;
+    padding: 2em;
+    line-height:1.85;
+    color: white;
+}
