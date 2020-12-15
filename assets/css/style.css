@@ -199,10 +199,8 @@ p {
     letter-spacing:0.1em;
     text-align:center;
     margin: 40px auto;
-    text-transform: lowercase;
     line-height: 145%;
     font-size: 2em;
-    font-variant: small-caps;
 }
 
 p:hover {
@@ -244,11 +242,4 @@ html, body {
     position: absolute;
     top: 0;
     right: 0%;
-}
-
-.manual {
-    text-align: left;
-    padding: 2em;
-    line-height:1.85;
-    color: white;
 }
